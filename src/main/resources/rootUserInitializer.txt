@@ -1,0 +1,2 @@
+SuperUserRoot@user
+K100tUserRootLockPass
