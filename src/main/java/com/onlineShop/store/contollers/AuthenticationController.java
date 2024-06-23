@@ -20,7 +20,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://85.217.171.56:8081")
 public class AuthenticationController {
 
     private final AuthenticationService authenticationService;

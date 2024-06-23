@@ -88,7 +88,7 @@ public class SecurityConfig {
 	    
 	    http.oauth2Login()
  	    .successHandler(loginSuccessHandler)
-        .failureUrl("http://localhost:8080/login")
+        .failureUrl("http://85.217.171.56:8081/login")
         .userInfoEndpoint()
         .userService(oauth2UserService);
 	    
