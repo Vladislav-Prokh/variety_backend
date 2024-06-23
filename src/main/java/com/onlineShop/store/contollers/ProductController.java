@@ -21,7 +21,7 @@ import com.onlineShop.store.entities.ProductRating;
 import com.onlineShop.store.services.ProductService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080", methods = {RequestMethod.POST, RequestMethod.GET, RequestMethod.OPTIONS})
+@CrossOrigin(origins = "http://localhost:8081", methods = {RequestMethod.POST, RequestMethod.GET, RequestMethod.OPTIONS})
 
 @RequestMapping("/products")
 public class ProductController {
