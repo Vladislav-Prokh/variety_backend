@@ -88,7 +88,7 @@ public class SecurityConfig {
 	    
 	    http.oauth2Login()
  	    .successHandler(loginSuccessHandler)
-        .failureUrl("http://85.217.171.56:8081/login")
+        .failureUrl("http://variety.in.net:8081//login")
         .userInfoEndpoint()
         .userService(oauth2UserService);
 	    
@@ -99,7 +99,7 @@ public class SecurityConfig {
   @Bean
   public CorsConfigurationSource corsConfigurationSource() {
 	    CorsConfiguration configuration = new CorsConfiguration();
-	    configuration.setAllowedOrigins(Arrays.asList("http://85.217.171.56:8081")); 
+	    configuration.setAllowedOrigins(Arrays.asList("http://variety.in.net:8081")); 
 	    configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE","OPTIONS")); 
 	    configuration.setAllowCredentials(true); 
 	    configuration.setAllowedHeaders(Arrays.asList("*")); 
@@ -118,7 +118,7 @@ public class SecurityConfig {
               registry.addMapping("/**")
                   .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                   .allowedHeaders("*")
-                  .allowedOrigins("http://85.217.171.56:8081")
+                  .allowedOrigins("http://variety.in.net:8081")
                   .allowCredentials(true)
                   .exposedHeaders("Authorization","X-Xsrf-Token");
           }

@@ -66,7 +66,7 @@ public class EmailService {
 
         message.setSubject("Confirm Your Registration");
         message.setText("Please click on the following link to confirm your registration:\n" +
-                "http://85.217.171.56:8086/confirm-email/success/"+token);
+                "http://85.217.171.56:8081/confirm-email/success/"+token);
 
         return message;
     }
