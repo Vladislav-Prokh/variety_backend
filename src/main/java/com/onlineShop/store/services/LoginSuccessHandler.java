@@ -32,7 +32,7 @@ public class LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 	private  RoleService roleService;
 	
 	  public LoginSuccessHandler() {
-	        super.setDefaultTargetUrl("http://localhost:8080/auth/google/success");
+	        super.setDefaultTargetUrl("http://variety.in.net:8086/auth/google/success");
 	    }
 
 	    @Override
