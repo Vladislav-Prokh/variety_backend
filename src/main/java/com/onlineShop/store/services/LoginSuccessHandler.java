@@ -32,8 +32,10 @@ public class LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 	private  RoleService roleService;
 	
 	  public LoginSuccessHandler() {
+
 	        super.setDefaultTargetUrl("http://variety.in.net:8086/auth/google/success");
-	    }
+
+	  }
 
 	    @Override
 	    public void onAuthenticationSuccess(HttpServletRequest req, HttpServletResponse response, Authentication authentication) throws ServletException, IOException {
