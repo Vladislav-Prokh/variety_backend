@@ -24,7 +24,7 @@ public class ProductFactoryProvider {
                 return applicationContext.getBean(ClothesItemFactory.class);
             case "accessories":
                 return applicationContext.getBean(AccessoryFactory.class);
-            case "men shoes":
+            case "man shoes":
             case "women shoes":
             	return applicationContext.getBean(ShoeFactory.class);
             default:
